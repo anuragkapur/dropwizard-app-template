@@ -31,6 +31,12 @@ class: [App.java](app/src/main/java/com/ft/membership/appName/App.java)
 ### Integration
 > mvn clean verify
 
+Optional: `-DAPP.ENV={LOCAL|INT}`       
+The property allows a different (say environment specific) version of configuration to be used while running the 
+Integration tests. Default version used is the file with suffix `-LOCAL.yml`. More values may be used for the APP.ENV 
+property as long as there is a yml file for the value you want to use in 
+[app/src/test/resources](app/src/test/resources)
+
 ### Acceptance
 Refer to [Acceptance-Tests Readme](acceptance-tests/README.md)
 
