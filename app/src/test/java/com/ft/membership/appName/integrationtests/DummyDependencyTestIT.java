@@ -12,6 +12,8 @@ import static org.junit.Assert.assertEquals;
 
 public class DummyDependencyTestIT extends AbstractIntegrationTest {
 
+
+
     @Test
     public void testCanGetExampleDotCom() throws Exception {
         Client client = ClientBuilder.newClient();
