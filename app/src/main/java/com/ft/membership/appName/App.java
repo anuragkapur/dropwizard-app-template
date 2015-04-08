@@ -31,7 +31,7 @@ public class App extends Application<AppConfig> {
 
     @Override
     public String getName() {
-        return "login-service";
+        return "appName";
     }
 
     public static void main(String[] args) throws Exception {
