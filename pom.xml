@@ -20,7 +20,7 @@
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
         <maven-failsafe-plugin.version>2.18</maven-failsafe-plugin.version>
         <maven-surefire-plugin.version>2.18</maven-surefire-plugin.version>
-        <atam4j.version>0.1.0</atam4j.version>
+        <atam4j.version>0.2.0</atam4j.version>
     </properties>
 
     <dependencyManagement>

@@ -14,6 +14,8 @@ import java.io.File;
  */
 public class AppAcceptanceTests extends Application<Configuration> {
 
+    public static final int TEN_MINUTES_IN_SECONDS = 60 * 10;
+
     @Override
     public void run(Configuration configuration, Environment environment) throws Exception {
 
@@ -21,7 +23,7 @@ public class AppAcceptanceTests extends Application<Configuration> {
         environment.jersey().disable();
 
         // TODO: Pass top level package instead of individual class names
-        new AcceptanceTestHealthCheckManager(environment, DummyAcceptanceTest.class).initialise();
+        new AcceptanceTestHealthCheckManager(environment, TEN_MINUTES_IN_SECONDS, DummyAcceptanceTest.class).initialise();
     }
 
     public static void main(String[] args) throws Exception {
